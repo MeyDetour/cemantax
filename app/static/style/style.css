@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+
+:root {
+    --dash: hsla(0, 0%, 7%, 1);
+    --grey: hsla(0, 0%, 34%, 1);
+    --violet: hsla(268, 69%, 56%, 1)
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dash);
+
+    font-family: "Major Mono Display", monospace !important;
+    font-weight: 400;
+    font-style: normal;
+
+    color: var(--grey);
+
+
+    padding-block: 57px;
+    box-sizing: border-box;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--violet);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--violet);
+}
+
+h1 {
+    color: var(--grey);
+    font-size: 48px;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+}
+.lastWord{
+    color: var(--violet) !important;
+}
+.red{
+    color: red;
+    margin-block: 20px;
+    min-height: 0px;
+}.green{
+    color: green;
+    margin-block: 20px;
+    min-height: 0px;
+}
+ .formContainer{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+form {
+    display: flex;
+    flex-direction: row;
+    padding: 6px;
+    border: var(--violet) 2px solid;
+    border-radius: 50px;
+
+    font-family: system-ui;
+}
+
+form input {
+    padding-left: 10px;
+    box-sizing: border-box;
+    height: 45px;
+    width: 80%;
+    background: transparent;
+    border: 0;
+    color: var(--grey);
+    font-size: 28px;
+}
+
+form input:focus-visible {
+    border: 0;
+    outline: none;
+}
+
+form button {
+    border-radius: 46px;
+
+    background: var(--violet);
+    height: 100%;
+    width: 20%;
+    border: none;
+
+    color: white;
+}
+
+.wordWritten {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+    height: 50%;
+}
+hr{
+
+    background: var(--grey);
+    border: var(--grey) 1px solid;
+    width: 100%;
+
+}
+.words {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+
+    overflow-x: hidden;
+
+
+    gap: 17px;
+    padding-right: 31px;
+    box-sizing: border-box;
+}
+
+.word {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.word span {
+    width: 10%;
+    color :white;
+}
+
+.word .range {
+    width: 60%;
+    background: #7b7b7b;
+    border-radius: 10px;
+    height: 16px;
+    position: relative;
+}
+
+.word .range .progress {
+    width: 44.02%;
+    height: 100%;
+    background: aqua;
+    border-radius: 10px;
+}
