@@ -2,7 +2,7 @@ import spacy
 from flask import session
 import random
 
-llm = spacy.load("en_core_web_lg")
+llm = spacy.load("fr_core_news_md")
 
 fr_words = [
     "ordinateur", "lampe", "chaussure", "montagne", "pyramide", "village",
