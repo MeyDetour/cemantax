@@ -1,7 +1,5 @@
-from crypt import methods
 
 from flask import Flask, render_template, request, session ,redirect
-from werkzeug.utils import redirect
 
 from app import app
 
